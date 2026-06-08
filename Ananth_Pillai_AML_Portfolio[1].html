@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ananth Pillai — AML &amp; Compliance Portfolio</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#F7F8FA;color:#1A202C;line-height:1.6}
+.port{max-width:900px;margin:0 auto;padding:2rem 1.25rem}
+.hero{background:linear-gradient(135deg,#0D1B3E 0%,#1B3A6B 55%,#0D6E6E 100%);border-radius:14px;padding:2.5rem 2rem;color:#fff;margin-bottom:1.5rem;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;right:-50px;top:-50px;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,0.04);pointer-events:none}
+.hero-name{font-size:30px;font-weight:600;letter-spacing:0.3px;margin-bottom:4px}
+.hero-role{font-size:14px;color:rgba(255,255,255,0.75);margin-bottom:1.5rem}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px}
+.htag{background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);border-radius:20px;padding:4px 12px;font-size:12px;color:rgba(255,255,255,0.9)}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:1.5rem}
+.metric{background:#fff;border:1px solid #E2E8F0;border-radius:10px;padding:14px 12px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.metric-num{font-size:24px;font-weight:600;color:#1B3A6B;line-height:1.1;margin-bottom:4px}
+.metric-lbl{font-size:11px;color:#718096;line-height:1.3}
+.sec-title{font-size:12px;font-weight:600;color:#4A5568;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:0.75rem;padding-bottom:6px;border-bottom:1px solid #E2E8F0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:1.5rem}
+.card{background:#fff;border:1px solid #E2E8F0;border-radius:12px;padding:1.25rem;cursor:pointer;transition:border-color 0.15s,box-shadow 0.15s}
+.card:hover{border-color:#93C5FD;box-shadow:0 2px 8px rgba(27,58,107,0.08)}
+.card.active{border:1.5px solid #1B3A6B;box-shadow:0 3px 12px rgba(27,58,107,0.12)}
+.card-head{display:flex;align-items:flex-start;gap:10px;margin-bottom:2px}
+.card-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.ic-forensic{background:#DBEAFE;color:#1D4ED8}
+.ic-multicur{background:#D1FAE5;color:#065F46}
+.ic-compliance{background:#EDE9FE;color:#6D28D9}
+.ic-workflow{background:#FEF3C7;color:#92400E}
+.ic-kyc{background:#FEE2E2;color:#B91C1C}
+.ic-audit{background:#DCFCE7;color:#166534}
+.card-title{font-size:13.5px;font-weight:600;line-height:1.3;color:#1A202C}
+.card-sub{font-size:11.5px;color:#718096;margin-top:1px}
+.card-body{font-size:13px;color:#4A5568;line-height:1.65;display:none;margin-top:10px;padding-top:10px;border-top:1px solid #F0F0F0}
+.card.active .card-body{display:block}
+.card-badge{display:inline-block;background:#EFF6FF;color:#1E40AF;font-size:11px;padding:3px 9px;border-radius:10px;margin-top:8px;border:1px solid #BFDBFE}
+.skills-box{background:#fff;border:1px solid #E2E8F0;border-radius:12px;padding:1rem 1.25rem;margin-bottom:1.5rem}
+.skill-row{display:flex;align-items:flex-start;gap:12px;padding:9px 0;border-bottom:1px solid #F7F7F7}
+.skill-row:last-child{border-bottom:none}
+.skill-lbl{font-size:12px;font-weight:600;color:#1B3A6B;min-width:145px;padding-top:3px}
+.skill-pills{display:flex;flex-wrap:wrap;gap:6px}
+.pill{background:#F3F4F6;border:1px solid #E5E7EB;border-radius:12px;padding:3px 10px;font-size:11.5px;color:#374151}
+.pill.hot{background:#EFF6FF;border-color:#BFDBFE;color:#1E40AF;font-weight:500}
+.exp-box{background:#fff;border:1px solid #E2E8F0;border-radius:12px;padding:1rem 1.25rem;margin-bottom:1.5rem}
+.exp-item{padding:11px 0;border-bottom:1px solid #F7F7F7}
+.exp-item:last-child{border-bottom:none;padding-bottom:0}
+.exp-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px}
+.exp-title{font-size:13.5px;font-weight:600;color:#1A202C}
+.exp-co{font-size:12px;color:#0D6E6E;margin-top:1px}
+.exp-period{font-size:11px;color:#718096;white-space:nowrap;margin-left:8px;flex-shrink:0}
+.aml-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+.atag{font-size:11px;background:#F0FDF4;color:#166534;padding:2px 8px;border-radius:10px;border:1px solid #BBF7D0}
+.cta{background:#fff;border:1px solid #E2E8F0;border-radius:12px;padding:1.25rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.cta-info{font-size:13px;color:#4A5568}
+.cta-info strong{color:#1A202C;font-weight:600}
+.cta-info a{color:#1B3A6B;text-decoration:none}
+.hint{font-size:11.5px;color:#A0AEC0;margin-top:4px;font-style:italic}
+@media(max-width:600px){.metrics{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}.exp-head{flex-direction:column}.exp-period{margin-left:0;margin-top:2px}}
+</style>
+</head>
+<body>
+<div class="port">
+
+  <div class="hero">
+    <div class="hero-name">Ananth Pillai</div>
+    <div class="hero-role">AML &amp; Compliance Analyst &nbsp;·&nbsp; Financial Crime Risk &nbsp;·&nbsp; KYC / CDD / Transaction Monitoring</div>
+    <div class="hero-tags">
+      <span class="htag">Forensic Bank Statement Analysis</span>
+      <span class="htag">Multi-Currency Reconciliation</span>
+      <span class="htag">Statutory Compliance (PMLA-adjacent)</span>
+      <span class="htag">SAP ERP · GL · Intercompany</span>
+      <span class="htag">Cross-Border Payment Flows</span>
+      <span class="htag">Bengaluru · Open to Relocation</span>
+    </div>
+  </div>
+
+  <div class="metrics">
+    <div class="metric"><div class="metric-num">95%</div><div class="metric-lbl">Drop in unreconciled items</div></div>
+    <div class="metric"><div class="metric-num">83%</div><div class="metric-lbl">Faster reconciliation cycle</div></div>
+    <div class="metric"><div class="metric-num">5 yrs</div><div class="metric-lbl">Forensic bank statement scope</div></div>
+    <div class="metric"><div class="metric-num">4+</div><div class="metric-lbl">Years finance operations</div></div>
+  </div>
+
+  <div class="sec-title">AML-Relevant Project Highlights — click any card to expand</div>
+  <div class="grid2" id="projects">
+
+    <div class="card" onclick="toggle(this)">
+      <div class="card-head">
+        <div class="card-icon ic-forensic"><i class="ti ti-search"></i></div>
+        <div><div class="card-title">Forensic Bank Statement Look-Back</div><div class="card-sub">Mantri Developers · CA Internship 2024</div></div>
+      </div>
+      <div class="card-body">Analysed 5 years of historical bank statements to reconstruct outstanding tenant refund liabilities. Rebuilt transaction timelines, identified gaps and unrecorded obligations, and produced a structured evidential narrative — functionally equivalent to an AML transaction look-back review or SAR investigation support exercise.<br><br><span class="card-badge">Forensic Reconciliation · Look-Back Review · Evidence Documentation</span></div>
+    </div>
+
+    <div class="card" onclick="toggle(this)">
+      <div class="card-head">
+        <div class="card-icon ic-multicur"><i class="ti ti-currency-dollar"></i></div>
+        <div><div class="card-title">Multi-Currency Cross-Border Operations</div><div class="card-sub">Marshall Autocare LLC · Dubai, UAE · 2020–22</div></div>
+      </div>
+      <div class="card-body">Executed and reconciled multi-currency transactions across international accounts — gaining practical knowledge of cross-border payment flows, correspondent banking mechanics, and FX exposure. This is precisely the operational context where AML red flags (structuring, layering, unusual flow patterns) must be detected.<br><br><span class="card-badge">Cross-Border Payments · FX Flows · Correspondent Banking Awareness</span></div>
+    </div>
+
+    <div class="card" onclick="toggle(this)">
+      <div class="card-head">
+        <div class="card-icon ic-compliance"><i class="ti ti-file-certificate"></i></div>
+        <div><div class="card-title">Statutory Compliance Filing Programme</div><div class="card-sub">CA Internship · Healthcare Client · 2024</div></div>
+      </div>
+      <div class="card-body">Performed GST reconciliation, ITC computation, and statutory filings covering ESI, EPF, and Professional Tax. Hands-on engagement with India's regulatory compliance infrastructure — the same discipline underpins PMLA obligations, RBI AML guidelines, and FIU-IND reporting frameworks.<br><br><span class="card-badge">GST · ESI · EPF · Regulatory Filing · PMLA-Adjacent</span></div>
+    </div>
+
+    <div class="card" onclick="toggle(this)">
+      <div class="card-head">
+        <div class="card-icon ic-workflow"><i class="ti ti-refresh"></i></div>
+        <div><div class="card-title">High-Volume GL Exception Resolution</div><div class="card-sub">BGK Advisory → Wipro · 2022–23</div></div>
+      </div>
+      <div class="card-body">Reduced unreconciled GL items by 95% across INR and FX accounts in SAP. Applied systematic root-cause investigation — tracing variances to source, documenting findings, and rebuilding clean baselines. This mirrors AML transaction investigation workflows where anomalies must be traced, documented, and cleared or escalated.<br><br><span class="card-badge">Variance Investigation · SAP GL · Audit Readiness · 95% Exception Reduction</span></div>
+    </div>
+
+    <div class="card" onclick="toggle(this)">
+      <div class="card-head">
+        <div class="card-icon ic-kyc"><i class="ti ti-user-check"></i></div>
+        <div><div class="card-title">Client Onboarding &amp; Documentation Control</div><div class="card-sub">Invensis Technologies · 2025</div></div>
+      </div>
+      <div class="card-body">Led client onboarding including ERP data structuring (COA setup), requirement gathering, and reporting cadence management. Ensured clean, traceable financial records from day one — foundational to KYC and CDD data quality. Acted as primary client POC with escalation responsibility mirroring compliance analyst workflows.<br><br><span class="card-badge">KYC-Adjacent Onboarding · CDD Documentation · Client Due Diligence</span></div>
+    </div>
+
+    <div class="card" onclick="toggle(this)">
+      <div class="card-head">
+        <div class="card-icon ic-audit"><i class="ti ti-clipboard-check"></i></div>
+        <div><div class="card-title">Audit Pack &amp; Intercompany Reporting</div><div class="card-sub">BGK Advisory → Wipro · 2022–23</div></div>
+      </div>
+      <div class="card-body">Prepared quarter-end and statutory audit packs in SAP, ensuring alignment between actuals, forecasts, and reported numbers for external scrutiny. Supported intercompany reconciliation across multi-entity structures — experience with layered financial flows directly relevant to detecting complex transaction structuring patterns.<br><br><span class="card-badge">Audit Pack · Statutory Reporting · Intercompany · Multi-Entity Flows</span></div>
+    </div>
+
+  </div>
+
+  <div class="sec-title">AML / Compliance Skills</div>
+  <div class="skills-box">
+    <div class="skill-row">
+      <div class="skill-lbl">Financial Crime</div>
+      <div class="skill-pills">
+        <span class="pill hot">Transaction Monitoring</span>
+        <span class="pill hot">Forensic Reconciliation</span>
+        <span class="pill hot">Anomaly Detection</span>
+        <span class="pill">Structuring Red Flags</span>
+        <span class="pill">Look-Back Reviews</span>
+      </div>
+    </div>
+    <div class="skill-row">
+      <div class="skill-lbl">KYC / CDD / EDD</div>
+      <div class="skill-pills">
+        <span class="pill hot">Client Onboarding Docs</span>
+        <span class="pill hot">CDD Process Support</span>
+        <span class="pill">PEP Awareness</span>
+        <span class="pill">Beneficial Ownership</span>
+      </div>
+    </div>
+    <div class="skill-row">
+      <div class="skill-lbl">Regulatory (India)</div>
+      <div class="skill-pills">
+        <span class="pill hot">PMLA Framework</span>
+        <span class="pill hot">RBI AML Guidelines</span>
+        <span class="pill">GST / ESI / EPF Filings</span>
+        <span class="pill">FIU-IND Awareness</span>
+        <span class="pill">FATF Principles</span>
+      </div>
+    </div>
+    <div class="skill-row">
+      <div class="skill-lbl">Payments / FX</div>
+      <div class="skill-pills">
+        <span class="pill hot">Multi-Currency Reconciliation</span>
+        <span class="pill hot">Cross-Border Flows</span>
+        <span class="pill">Wise / International Payouts</span>
+        <span class="pill">Correspondent Banking</span>
+      </div>
+    </div>
+    <div class="skill-row">
+      <div class="skill-lbl">Systems &amp; Tools</div>
+      <div class="skill-pills">
+        <span class="pill hot">SAP ERP (GL, Intercompany)</span>
+        <span class="pill">QuickBooks · Xero</span>
+        <span class="pill">Excel Advanced (VBA)</span>
+        <span class="pill">SQL (developing)</span>
+        <span class="pill">Looker Studio</span>
+        <span class="pill">Make.com / Zapier</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-title">Experience Timeline</div>
+  <div class="exp-box">
+    <div class="exp-item">
+      <div class="exp-head">
+        <div><div class="exp-title">Finance Operations &amp; Compliance Support Analyst</div><div class="exp-co">Invensis Technologies</div></div>
+        <div class="exp-period">Mar – Sep 2025</div>
+      </div>
+      <div class="aml-tags"><span class="atag">Anomaly Detection</span><span class="atag">Client Onboarding / CDD-adjacent</span><span class="atag">MIS Reporting</span><span class="atag">Escalation Workflows</span></div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-head">
+        <div><div class="exp-title">Finance Operations Executive (R2R &amp; Audit)</div><div class="exp-co">BGK Advisory → deployed to Wipro</div></div>
+        <div class="exp-period">Sep 2022 – Jul 2023</div>
+      </div>
+      <div class="aml-tags"><span class="atag">GL Exception Investigation</span><span class="atag">SAP Reconciliation</span><span class="atag">Audit Pack Prep</span><span class="atag">Intercompany Flows</span></div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-head">
+        <div><div class="exp-title">Business Process Executive — Finance &amp; Operations</div><div class="exp-co">Marshall Autocare LLC · Dubai, UAE</div></div>
+        <div class="exp-period">Sep 2020 – Aug 2022</div>
+      </div>
+      <div class="aml-tags"><span class="atag">Cross-Border Multi-Currency</span><span class="atag">FX Reconciliation</span><span class="atag">Payment Documentation</span></div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-head">
+        <div><div class="exp-title">Accounts Assistant</div><div class="exp-co">Ardent Business Consultancy · Kochi</div></div>
+        <div class="exp-period">Apr 2019 – Sep 2020</div>
+      </div>
+      <div class="aml-tags"><span class="atag">International AR (UAE / Saudi Arabia)</span><span class="atag">SAP Inventory Transactions</span></div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-head">
+        <div><div class="exp-title">Internship — Statutory, Indirect Tax &amp; Forensic Reconciliation</div><div class="exp-co">Venkatesh &amp; Ragavendra Chartered Accountants</div></div>
+        <div class="exp-period">May – Jun 2024</div>
+      </div>
+      <div class="aml-tags"><span class="atag">Forensic Bank Statement Analysis</span><span class="atag">5-Year Transaction Look-Back</span><span class="atag">GST / ESI / EPF Compliance</span></div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <div class="cta-info">
+      <strong>Ananth Pillai</strong> &nbsp;·&nbsp; <a href="mailto:an47th.311@gmail.com">an47th.311@gmail.com</a> &nbsp;·&nbsp; +91 7736658011 &nbsp;·&nbsp; Bengaluru, India
+      <div class="hint">Actively pursuing ACAMS / ICA AML certification · Available immediately</div>
+    </div>
+  </div>
+
+</div>
+<script>
+function toggle(el){
+  var wasActive=el.classList.contains('active');
+  document.querySelectorAll('#projects .card').forEach(function(c){c.classList.remove('active');});
+  if(!wasActive)el.classList.add('active');
+}
+</script>
+</body>
+</html>
