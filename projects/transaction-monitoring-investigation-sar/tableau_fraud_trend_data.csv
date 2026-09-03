@@ -1,0 +1,46 @@
+Account ID,Alert Rule Triggered,Trigger Date,Trigger Month,Channel,Merchant Category,Transaction Amount (USD),Total Rules Triggered (Account),Cross-Transaction Rules Triggered (Account),Disposition Category,Investigation Disposition
+ACC1006,Round-Amount Clustering,2026-01-07,2026-01,Wire,Wire Transfer,1000.0,1,0,False Positive,False Positive - Cleared on Review
+ACC1055,Round-Amount Clustering,2026-01-07,2026-01,Wire,Wire Transfer,2000.0,2,1,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1055,Geographic Impossibility,2026-01-11,2026-01,ATM,Cash Withdrawal,1778.57,2,1,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1048,Round-Amount Clustering,2026-01-15,2026-01,Wire,Wire Transfer,2000.0,2,0,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1004,Velocity Spike,2026-01-16,2026-01,Multiple,,3552.51,2,1,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1014,Duplicate Transaction,2026-01-18,2026-01,POS,Travel,661.85,2,1,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1006,Round-Amount Clustering,2026-01-20,2026-01,Wire,Wire Transfer,5000.0,1,0,False Positive,False Positive - Cleared on Review
+ACC1039,Round-Amount Clustering,2026-01-21,2026-01,Wire,Wire Transfer,1000.0,1,0,False Positive,False Positive - Cleared on Review
+ACC1055,Round-Amount Clustering,2026-01-21,2026-01,Wire,Wire Transfer,5000.0,2,1,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1004,Duplicate Transaction,2026-01-26,2026-01,POS,Utilities,158.13,2,1,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1014,Off-Hours High-Value Withdrawal,2026-01-28,2026-01,ATM,Cash Withdrawal,4343.57,2,1,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1057,Duplicate Transaction,2026-01-28,2026-01,POS,Dining,436.74,1,1,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1006,Round-Amount Clustering,2026-01-29,2026-01,Wire,Wire Transfer,9000.0,1,0,False Positive,False Positive - Cleared on Review
+ACC1023,Velocity Spike,2026-01-29,2026-01,Multiple,,3006.85,2,0,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1052,Velocity Spike,2026-01-29,2026-01,Multiple,,2681.94,1,0,False Positive,False Positive - Cleared on Review
+ACC1034,Round-Amount Clustering,2026-01-31,2026-01,Wire,Wire Transfer,2000.0,1,0,False Positive,False Positive - Cleared on Review
+ACC1030,Duplicate Transaction,2026-02-05,2026-02,POS,Dining,144.44,1,1,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1009,Geographic Impossibility,2026-02-06,2026-02,ATM,Cash Withdrawal,920.67,1,1,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1009,Geographic Impossibility,2026-02-07,2026-02,Online,Wire Transfer,132.04,1,1,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1009,Geographic Impossibility,2026-02-07,2026-02,POS,Travel,123.67,1,1,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1026,Off-Hours High-Value Withdrawal,2026-02-07,2026-02,ATM,Cash Withdrawal,4210.73,1,0,False Positive,False Positive - Cleared on Review
+ACC1001,Geographic Impossibility,2026-02-10,2026-02,ATM,Cash Withdrawal,1154.04,1,1,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1001,Geographic Impossibility,2026-02-10,2026-02,ATM,Cash Withdrawal,1154.04,1,1,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1024,Structuring,2026-02-10,2026-02,Wire,,10992.98,2,2,SAR Filed,Escalated - SAR Filed
+ACC1034,Round-Amount Clustering,2026-02-11,2026-02,Wire,Wire Transfer,1000.0,1,0,False Positive,False Positive - Cleared on Review
+ACC1048,Round-Amount Clustering,2026-02-11,2026-02,Wire,Wire Transfer,2000.0,2,0,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1041,Structuring,2026-02-14,2026-02,Wire,,8290.26,1,1,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1037,Geographic Impossibility,2026-02-16,2026-02,ATM,Cash Withdrawal,1307.77,1,1,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1002,Structuring,2026-02-17,2026-02,Wire,,13226.33,1,1,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1056,Velocity Spike,2026-02-23,2026-02,Multiple,,3637.35,1,0,False Positive,False Positive - Cleared on Review
+ACC1000,Structuring,2026-02-25,2026-02,Wire,,10250.57,1,1,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1023,Round-Amount Clustering,2026-02-25,2026-02,Wire,Wire Transfer,3000.0,2,0,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1048,Round-Amount Clustering,2026-02-26,2026-02,Wire,Wire Transfer,7000.0,2,0,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1021,Off-Hours High-Value Withdrawal,2026-03-08,2026-03,ATM,Cash Withdrawal,4414.16,1,0,False Positive,False Positive - Cleared on Review
+ACC1005,Velocity Spike,2026-03-10,2026-03,Multiple,,2359.8,1,0,False Positive,False Positive - Cleared on Review
+ACC1048,Off-Hours High-Value Withdrawal,2026-03-12,2026-03,ATM,Cash Withdrawal,2242.13,2,0,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1040,Structuring,2026-03-13,2026-03,Wire,,10397.31,1,1,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1042,Structuring,2026-03-14,2026-03,Wire,,8110.93,1,1,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1015,Geographic Impossibility,2026-03-15,2026-03,ATM,Cash Withdrawal,756.57,1,1,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1024,Duplicate Transaction,2026-03-16,2026-03,POS,Dining,96.19,2,2,SAR Filed,Escalated - SAR Filed
+ACC1023,Round-Amount Clustering,2026-03-20,2026-03,Wire,Wire Transfer,1000.0,2,0,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
+ACC1010,Off-Hours High-Value Withdrawal,2026-03-23,2026-03,ATM,Cash Withdrawal,3618.74,1,0,False Positive,False Positive - Cleared on Review
+ACC1039,Round-Amount Clustering,2026-03-24,2026-03,Wire,Wire Transfer,3000.0,1,0,False Positive,False Positive - Cleared on Review
+ACC1006,Round-Amount Clustering,2026-03-26,2026-03,Wire,Wire Transfer,3000.0,1,0,False Positive,False Positive - Cleared on Review
+ACC1048,Round-Amount Clustering,2026-03-28,2026-03,Wire,Wire Transfer,2000.0,2,0,Suspicious - Under Review,"Escalated - Suspicious Activity (SAR Considered, Not Filed)"
