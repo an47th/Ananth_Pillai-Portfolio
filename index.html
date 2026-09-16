@@ -119,6 +119,17 @@
   .pimp .n{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px;color:var(--proj-color,var(--violet));}
   .pimp .l{font-size:11.5px;color:var(--text-dim);margin-top:2px;}
   .proj-tags{display:flex;flex-wrap:wrap;gap:8px;}
+  .proj-links{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap;}
+  .proj-chart{background:rgba(0,0,0,.22);border:1px solid var(--border);border-radius:14px;padding:18px 20px 8px;margin-bottom:20px;}
+  .proj-chart-label{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-dim);margin-bottom:8px;}
+  .proj-legend{display:flex;gap:16px;margin-top:6px;padding-bottom:4px;flex-wrap:wrap;}
+  .proj-legend span{font-size:11px;color:var(--text-soft);display:inline-flex;align-items:center;gap:6px;}
+  .proj-legend i{width:9px;height:9px;border-radius:3px;display:inline-block;}
+  .proj-link{font-size:13px;font-weight:600;padding:9px 18px;border-radius:100px;transition:.18s;display:inline-flex;align-items:center;gap:6px;}
+  .proj-link.primary{background:var(--proj-color,var(--violet));color:#05060A;}
+  .proj-link.primary:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(139,124,255,.3);}
+  .proj-link.secondary{border:1px solid var(--border-hi);color:var(--text-soft);}
+  .proj-link.secondary:hover{background:rgba(255,255,255,.06);color:#fff;}
   .ptag{font-size:11.5px;font-family:'JetBrains Mono',monospace;background:rgba(255,255,255,.05);border:1px solid var(--border);color:var(--text-soft);padding:4px 11px;border-radius:100px;}
 
   /* DIRECTION */
@@ -224,6 +235,16 @@
       <h3>Transaction Monitoring, Investigation &amp; SAR Escalation</h3>
       <div class="proj-meta">Independent Project · SQL · Advanced Excel · Tableau</div>
       <p class="desc">Built a full fraud-ops pipeline end to end: a six-rule SQL detection engine (structuring, velocity, geo-impossibility, round-tripping, duplicate charges, off-hours cash-out), an Excel risk-scoring dashboard, and a documented investigation layer — customer/transaction profiling and behavioural baseline analysis — that carried flagged accounts through to a drafted SAR narrative. A Tableau dashboard tracks which alert rule fires most and how often each resolves to false positive vs. escalated vs. SAR-filed.</p>
+      <div class="proj-chart">
+        <div class="proj-chart-label">Alert Rule Triggers, by Disposition Outcome</div>
+        <svg viewBox="0 0 640 230" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;"><line x1="30" y1="180.0" x2="630" y2="180.0" stroke="rgba(255,255,255,.08)" stroke-width="1"/><line x1="30" y1="103.0" x2="630" y2="103.0" stroke="rgba(255,255,255,.08)" stroke-width="1"/><line x1="30" y1="26.0" x2="630" y2="26.0" stroke="rgba(255,255,255,.08)" stroke-width="1"/><rect x="37.4" y="103.0" width="58" height="77.0" fill="#2FE0C8" rx="3"/><rect x="37.4" y="26.0" width="58" height="77.0" fill="#8B7CFF" rx="3"/><text x="66.4" y="18.0" fill="#EDEFF4" font-size="13" font-family="JetBrains Mono, monospace" text-anchor="middle" font-weight="600">16</text><text x="66.4" y="196.0" fill="#9AA1B4" font-size="10.5" font-family="Inter, sans-serif" text-anchor="middle">Round-</text><text x="66.4" y="209.0" fill="#9AA1B4" font-size="10.5" font-family="Inter, sans-serif" text-anchor="middle">Amount</text><rect x="132.9" y="103.0" width="58" height="77.0" fill="#8B7CFF" rx="3"/><text x="161.9" y="95.0" fill="#EDEFF4" font-size="13" font-family="JetBrains Mono, monospace" text-anchor="middle" font-weight="600">8</text><text x="161.9" y="196.0" fill="#9AA1B4" font-size="10.5" font-family="Inter, sans-serif" text-anchor="middle">Geo-</text><text x="161.9" y="209.0" fill="#9AA1B4" font-size="10.5" font-family="Inter, sans-serif" text-anchor="middle">Impossib.</text><rect x="228.3" y="131.9" width="58" height="48.1" fill="#8B7CFF" rx="3"/><rect x="228.3" y="122.2" width="58" height="9.6" fill="#FF7CA3" rx="3"/><text x="257.3" y="114.2" fill="#EDEFF4" font-size="13" font-family="JetBrains Mono, monospace" text-anchor="middle" font-weight="600">6</text><text x="257.3" y="196.0" fill="#9AA1B4" font-size="10.5" font-family="Inter, sans-serif" text-anchor="middle">Structuring</text><rect x="323.7" y="151.1" width="58" height="28.9" fill="#2FE0C8" rx="3"/><rect x="323.7" y="131.9" width="58" height="19.2" fill="#8B7CFF" rx="3"/><text x="352.7" y="123.9" fill="#EDEFF4" font-size="13" font-family="JetBrains Mono, monospace" text-anchor="middle" font-weight="600">5</text><text x="352.7" y="196.0" fill="#9AA1B4" font-size="10.5" font-family="Inter, sans-serif" text-anchor="middle">Off-Hours</text><rect x="419.1" y="141.5" width="58" height="38.5" fill="#8B7CFF" rx="3"/><rect x="419.1" y="131.9" width="58" height="9.6" fill="#FF7CA3" rx="3"/><text x="448.1" y="123.9" fill="#EDEFF4" font-size="13" font-family="JetBrains Mono, monospace" text-anchor="middle" font-weight="600">5</text><text x="448.1" y="196.0" fill="#9AA1B4" font-size="10.5" font-family="Inter, sans-serif" text-anchor="middle">Duplicate</text><rect x="514.6" y="151.1" width="58" height="28.9" fill="#2FE0C8" rx="3"/><rect x="514.6" y="131.9" width="58" height="19.2" fill="#8B7CFF" rx="3"/><text x="543.6" y="123.9" fill="#EDEFF4" font-size="13" font-family="JetBrains Mono, monospace" text-anchor="middle" font-weight="600">5</text><text x="543.6" y="196.0" fill="#9AA1B4" font-size="10.5" font-family="Inter, sans-serif" text-anchor="middle">Velocity</text><g transform="translate(0,0)"></g></svg>
+        <div class="proj-legend">
+          <span><i style="background:#2FE0C8;"></i>False Positive</span>
+          <span><i style="background:#8B7CFF;"></i>Under Review</span>
+          <span><i style="background:#FF7CA3;"></i>SAR Filed</span>
+        </div>
+      </div>
+      
       <div class="proj-impacts">
         <div class="pimp"><div class="n">1,488</div><div class="l">Transactions Screened</div></div>
         <div class="pimp"><div class="n">26</div><div class="l">Accounts Investigated</div></div>
@@ -231,6 +252,11 @@
         <div class="pimp"><div class="n">6</div><div class="l">Detection Rules Built</div></div>
       </div>
       <div class="proj-tags"><span class="ptag">SQL</span><span class="ptag">Advanced Excel</span><span class="ptag">Tableau</span><span class="ptag">SAR Documentation</span><span class="ptag">Behavioural Analysis</span></div>
+      <div class="proj-links">
+        <a class="proj-link primary" style="--proj-color:#FF7CA3;" href="projects/transaction-monitoring-investigation-sar/case_study_3_investigation_sar.pdf" target="_blank" rel="noopener">Read the SAR Case Study →</a>
+        <a class="proj-link secondary" href="projects/transaction-monitoring-investigation-sar/case_study_1_sql_fraud_detection.pdf" target="_blank" rel="noopener">SQL Detection Engine (PDF)</a>
+        <a class="proj-link secondary" href="https://github.com/an47th/Ananth_Pillai-Portfolio/tree/main/projects/transaction-monitoring-investigation-sar" target="_blank" rel="noopener">Browse All Files on GitHub</a>
+      </div>
     </div>
 
     <div class="proj reveal" style="--proj-color:#2FE0C8;">
@@ -241,6 +267,11 @@
       <h3>Market-Entry Business Case — NeuroLinkX</h3>
       <div class="proj-meta">Business Analyst Hiring Assignment</div>
       <p class="desc">Built a full go-to-market case for an AI finance-ops product from scratch: scored five ideal customer profiles against LinkedIn, Tracxn, Crunchbase and Deloitte data, mapped a three-competitor matrix, modeled ROI, and phased a 90-day revenue plan — delivered as a strategic memo to the CEO.</p>
+      <div class="proj-chart">
+        <div class="proj-chart-label">Modeled ROI &amp; Payback Timeline</div>
+        <svg viewBox="0 0 640 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;"><text x="20" y="22" fill="#9AA1B4" font-size="12" font-family="Inter, sans-serif">Investment (1x)</text><rect x="20" y="30" width="93.3" height="26" rx="6" fill="#9AA1B4" opacity="0.35"/><text x="20" y="66" fill="#EDEFF4" font-size="12" font-family="Inter, sans-serif" font-weight="600">Modeled Year-1 Return (4.5x)</text><rect x="20" y="74" width="420.0" height="26" rx="6" fill="url(#gradBar)"/><defs><linearGradient id="gradBar" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#8B7CFF"/><stop offset="100%" stop-color="#2FE0C8"/></linearGradient></defs><text x="450.0" y="92" fill="#2FE0C8" font-size="14" font-family="JetBrains Mono, monospace" font-weight="700">4.5x</text><text x="20" y="128" fill="#9AA1B4" font-size="12" font-family="Inter, sans-serif">Payback Period — Week 12–14 of a 52-week year</text><rect x="20" y="140" width="560" height="14" rx="7" fill="rgba(255,255,255,.08)"/><rect x="149.2" y="140" width="27.5" height="14" rx="7" fill="#FF7CA3"/><text x="149.2" y="172" fill="#FF7CA3" font-size="11" font-family="JetBrains Mono, monospace" text-anchor="middle">Wk 12–14</text><text x="20" y="172" fill="#666E82" font-size="10.5" font-family="Inter, sans-serif">Wk 0</text><text x="580.0" y="172" fill="#666E82" font-size="10.5" font-family="Inter, sans-serif" text-anchor="end">Wk 52</text></svg>
+      </div>
+      
       <div class="proj-impacts">
         <div class="pimp"><div class="n">4.5x</div><div class="l">Modeled Year-1 ROI</div></div>
         <div class="pimp"><div class="n">₹5.86L</div><div class="l">Net Benefit Modeled</div></div>
@@ -258,12 +289,21 @@
       <h3>India Football Performance Analysis Dashboard</h3>
       <div class="proj-meta">Independent Project · Tableau · 2014 – 2024</div>
       <p class="desc">A ten-year Tableau analysis of the Indian men's national football team, combining FIFA historical rankings with year-by-year squad data across six views — FIFA rank and rank-change trend, win % trend, points per match, goal difference, squad-age progression, and a U23-debutant view tracking youngest senior debuts as a talent-pipeline signal.</p>
+      <div class="proj-chart">
+        <div class="proj-chart-label">FIFA World Ranking Trend, 2014–2024</div>
+        <svg viewBox="0 0 640 215" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;"><line x1="34" y1="30.0" x2="626" y2="30.0" stroke="rgba(255,255,255,.08)" stroke-width="1"/><line x1="34" y1="107.5" x2="626" y2="107.5" stroke="rgba(255,255,255,.08)" stroke-width="1"/><line x1="34" y1="185.0" x2="626" y2="185.0" stroke="rgba(255,255,255,.08)" stroke-width="1"/><path d="M 34.0 185.0 L 93.2 174.5 L 152.4 109.6 L 211.6 46.8 L 270.8 30.0 L 330.0 53.0 L 389.2 44.7 L 448.4 44.7 L 507.6 48.9 L 566.8 40.5 L 626.0 90.7 L 626.0 185.0 L 34.0 185.0 Z" fill="url(#gradFill)" opacity="0.18"/><defs><linearGradient id="gradFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#8B7CFF"/><stop offset="100%" stop-color="#8B7CFF" stop-opacity="0"/></linearGradient></defs><path d="M 34.0 185.0 L 93.2 174.5 L 152.4 109.6 L 211.6 46.8 L 270.8 30.0 L 330.0 53.0 L 389.2 44.7 L 448.4 44.7 L 507.6 48.9 L 566.8 40.5 L 626.0 90.7" fill="none" stroke="#8B7CFF" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="34.0" cy="185.0" r="4.5" fill="#8B7CFF"/><text x="34.0" y="174.0" fill="#EDEFF4" font-size="12" font-family="JetBrains Mono, monospace" text-anchor="middle" font-weight="600">#171</text><text x="34.0" y="207.0" fill="#9AA1B4" font-size="10.5" font-family="Inter, sans-serif" text-anchor="middle">2014</text><circle cx="93.2" cy="174.5" r="3" fill="#8B7CFF"/><circle cx="152.4" cy="109.6" r="3" fill="#8B7CFF"/><text x="152.4" y="207.0" fill="#9AA1B4" font-size="10.5" font-family="Inter, sans-serif" text-anchor="middle">2016</text><circle cx="211.6" cy="46.8" r="3" fill="#8B7CFF"/><circle cx="270.8" cy="30.0" r="4.5" fill="#2FE0C8"/><text x="270.8" y="19.0" fill="#EDEFF4" font-size="12" font-family="JetBrains Mono, monospace" text-anchor="middle" font-weight="600">#97</text><text x="270.8" y="207.0" fill="#9AA1B4" font-size="10.5" font-family="Inter, sans-serif" text-anchor="middle">2018</text><circle cx="330.0" cy="53.0" r="3" fill="#8B7CFF"/><circle cx="389.2" cy="44.7" r="3" fill="#8B7CFF"/><text x="389.2" y="207.0" fill="#9AA1B4" font-size="10.5" font-family="Inter, sans-serif" text-anchor="middle">2020</text><circle cx="448.4" cy="44.7" r="3" fill="#8B7CFF"/><circle cx="507.6" cy="48.9" r="3" fill="#8B7CFF"/><text x="507.6" y="207.0" fill="#9AA1B4" font-size="10.5" font-family="Inter, sans-serif" text-anchor="middle">2022</text><circle cx="566.8" cy="40.5" r="3" fill="#8B7CFF"/><circle cx="626.0" cy="90.7" r="4.5" fill="#8B7CFF"/><text x="626.0" y="79.7" fill="#EDEFF4" font-size="12" font-family="JetBrains Mono, monospace" text-anchor="middle" font-weight="600">#126</text><text x="626.0" y="207.0" fill="#9AA1B4" font-size="10.5" font-family="Inter, sans-serif" text-anchor="middle">2024</text></svg>
+      </div>
+      
       <div class="proj-impacts">
         <div class="pimp"><div class="n">10yr</div><div class="l">Historical Window</div></div>
         <div class="pimp"><div class="n">6</div><div class="l">Analytical Views</div></div>
         <div class="pimp"><div class="n">2</div><div class="l">Data Sources Merged</div></div>
       </div>
       <div class="proj-tags"><span class="ptag">Tableau</span><span class="ptag">Trend Analysis</span><span class="ptag">Data Visualization</span></div>
+      <div class="proj-links">
+        <a class="proj-link primary" style="--proj-color:#8B7CFF;" href="projects/india-football-tableau-dashboard/India_Football_Performance_Analysis_Dashboard.twbx" download>Download Tableau Workbook →</a>
+        <a class="proj-link secondary" href="https://github.com/an47th/Ananth_Pillai-Portfolio/tree/main/projects/india-football-tableau-dashboard" target="_blank" rel="noopener">Browse Files on GitHub</a>
+      </div>
     </div>
   </div>
 </section>
